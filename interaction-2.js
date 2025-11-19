@@ -59,7 +59,7 @@ function rotationChange(rotx, roty, rotz) {
 }
 
 function mousePressed() {
-    // playAudio()
+    playAudio()
     // Use this for debugging from the desktop!
 }
 
@@ -102,8 +102,8 @@ function playAudio() {
     if (audioContext.state === 'suspended') {
         return;
     }
-    dspNode.setParamValue("/torpedo/gate", 1)
-    setTimeout(() => { dspNode.setParamValue("/torpedo/gate", 0) }, 100);
+    dspNode.setParamValue("/torpedo/gate", 1);
+    setTimeout(() => { dspNode.setParamValue("/torpedo/gate", 0); }, 100);
 }
 
 //==========================================================================================
