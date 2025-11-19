@@ -102,8 +102,8 @@ function playAudio() {
     if (audioContext.state === 'suspended') {
         return;
     }
-    dspNode.setParamValue("/englishBell/gate", 1)
-    setTimeout(() => { dspNode.setParamValue("/englishBell/gate", 0) }, 100);
+    dspNode.setParamValue("/torpedo/gate", 1)
+    setTimeout(() => { dspNode.setParamValue("/torpedo/gate", 0) }, 100);
 }
 
 //==========================================================================================
